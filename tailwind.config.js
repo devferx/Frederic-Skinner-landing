@@ -7,6 +7,10 @@ module.exports = {
       colors: {
         primary: "#2C74FF",
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        bodoni: ["Bodoni Moda", "serif"],
+      },
     },
   },
   variants: {
