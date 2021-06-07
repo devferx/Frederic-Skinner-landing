@@ -8,3 +8,46 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.footer-card {
+  animation-name: footer-card-initial-animation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform: translateY(100%);
+  @apply relative w-[292px] h-48 bg-primary cursor-pointer;
+}
+
+.footer-card.one {
+  animation-delay: 0.5s;
+}
+
+.footer-card.two {
+  animation-delay: 1.5s;
+}
+
+.footer-card.three {
+  animation-delay: 2.5s;
+}
+
+.footer-card:hover span {
+  transform: translateY(70%);
+  @apply flex justify-center items-start;
+}
+
+.footer-card span {
+  @apply absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center pt-[14px] text-white bg-black bg-opacity-75;
+  transition: 450ms;
+}
+
+.footer-card img {
+  @apply w-full h-full object-cover;
+}
+
+@keyframes footer-card-initial-animation {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
