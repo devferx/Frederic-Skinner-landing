@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 .bg-body {
-  background: url("../assets/images/bg.png");
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.5),
+      rgba(17, 17, 17, 0.5)
+    ),
+    url("../assets/images/bg.png");
   background-position: bottom left;
   background-size: cover;
   background-repeat: no-repeat;
