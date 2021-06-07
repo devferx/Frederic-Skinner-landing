@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-body {
+  background: url("../assets/images/bg.png");
+  background-position: bottom left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
