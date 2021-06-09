@@ -13,6 +13,11 @@
   background-repeat: no-repeat;
 }
 
+.aside-container {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+}
+
 .footer-card {
   animation-name: footer-card-initial-animation;
   animation-duration: 1s;
